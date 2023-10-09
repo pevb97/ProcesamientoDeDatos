@@ -6,3 +6,4 @@ deadsDataset = dataset[filtroDeads]
 lifesDataset = dataset[~filtroDeads]
 promAgeDeads = deadsDataset['age'].mean()
 promAgeLifes = lifesDataset['age'].mean()
+print(promAgeDeads, promAgeLifes)

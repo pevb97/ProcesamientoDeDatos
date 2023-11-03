@@ -14,7 +14,7 @@ def getRequestCSV(url: str):
 
 data = pd.read_csv('datos.csv')
 def processData(Dataframe: pd.DataFrame):
-    dataSinFaltantes = data.dropna()
+    dataSinFaltantes = Dataframe.dropna()
     dataSinFaltantes.drop_duplicates(inplace=True)
     dataSinAtipicos = dataSinFaltantes.copy()
     for columna in dataSinAtipicos.columns:
